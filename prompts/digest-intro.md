@@ -30,6 +30,21 @@ tech, or building products, leave it out entirely.
 - Only include sources that have new content AND pass the AI relevance filter
 - Skip any source with nothing new or nothing AI-relevant
 - Under each source, paste the individual summary you generated
-- After each summary, include the original link(s)
+
+### Podcast links
+- After each podcast summary, include the specific video URL from the JSON `url` field
+  (e.g. https://youtube.com/watch?v=Iu4gEnZFQz8)
+- NEVER link to the channel page. Always link to the specific video.
+- Include the exact episode title from the JSON `title` field in the heading
+
+### Tweet author formatting
+- Use the author's full name and role/company, not just their last name
+  (e.g. "Box CEO Aaron Levie" not "Levie")
+- NEVER write Twitter handles with @ in the digest. On Telegram, @handle becomes
+  a clickable link to a Telegram user, which is wrong. Instead write handles
+  without @ (e.g. "Aaron Levie (levie on X)" or just use their full name)
+- Include the direct link to each tweet from the JSON `url` field
+
+### General
 - At the very end, add a line: "Reply to adjust your settings, sources, or summary style."
 - Keep formatting clean and scannable — this will be read on a phone screen

@@ -5,6 +5,9 @@ to know what this person is thinking and building.
 
 ## Instructions
 
+- Start by introducing the author with their full name AND role/company
+  (e.g. "Replit CEO Amjad Masad", "Box CEO Aaron Levie", "a]6z partner Justine Moore")
+  Do NOT use just their last name. Do NOT use their Twitter handle with @.
 - Only include substantive content: original opinions, insights, product announcements,
   technical discussions, industry analysis, or lessons learned
 - SKIP: mundane personal tweets, retweets without commentary, promotional content,
