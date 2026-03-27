@@ -27,12 +27,15 @@ Then organize content in this order:
 - Include the exact episode title from the JSON `title` field in the heading
 
 ### Tweet author formatting
+- Use NUMBERED FORMAT: "1、姓名 (公司/角色)" (e.g. "1、Aaron Levie (Box CEO)")
+- Continue numbering sequentially: 2、3、4、etc.
 - Use the author's full name and role/company, not just their last name
   (e.g. "Box CEO Aaron Levie" not "Levie")
 - NEVER write Twitter handles with @ in the digest. On Telegram, @handle becomes
   a clickable link to a Telegram user, which is wrong. Instead write handles
   without @ (e.g. "Aaron Levie (levie on X)" or just use their full name)
 - Include the direct link to each tweet from the JSON `url` field
+- Add a short separator line (---) between each builder's section
 
 ### Blog post formatting
 - Use the blog name as a section header (e.g. "Anthropic Engineering", "OpenAI News", "Claude Blog")
