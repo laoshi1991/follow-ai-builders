@@ -393,7 +393,16 @@ Read `config.language` from the JSON:
 
 **Follow this setting exactly. Do NOT mix languages.**
 
-### Step 6: Create Feishu Document (If Applicable)
+### Step 6: Generate Beautiful HTML Page
+
+After remixing the content, you MUST generate a beautifully styled HTML file containing the final digest.
+1. Use modern, responsive CSS (mobile and desktop friendly).
+2. Use a clean, elegant typography (e.g., sans-serif fonts, good line-height, proper padding).
+3. Ensure the content is easy to read (cards for tweets, distinct headers for builders, distinct styling for links and metadata).
+4. Save this file locally (e.g., `/tmp/ai-builders-digest.html` or equivalent accessible path).
+5. Append the file path or URL (if you can serve it) to the very end of your final digest output so the user can open it in their browser.
+
+### Step 7: Create Feishu Document (If Applicable)
 
 If your agent environment has the capability/tools to create and edit Feishu (Lark) documents:
 1. Create a new Feishu document titled "AI Builders Digest - [Today's Date]".
@@ -401,7 +410,7 @@ If your agent environment has the capability/tools to create and edit Feishu (La
 3. Append the link to this Feishu document at the very end of your final digest output so the user can access it.
 If your agent does NOT have Feishu document capabilities, simply skip this step and proceed to delivery.
 
-### Step 7: Deliver
+### Step 8: Deliver
 
 Read `config.delivery.method` from the JSON:
 
