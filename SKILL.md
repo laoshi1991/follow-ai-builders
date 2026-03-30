@@ -395,12 +395,14 @@ Read `config.language` from the JSON:
 
 ### Step 6: Generate Beautiful HTML Page
 
-After remixing the content, you MUST generate a beautifully styled HTML file containing the final digest.
-1. Use modern, responsive CSS (mobile and desktop friendly).
-2. Use a clean, elegant typography (e.g., sans-serif fonts, good line-height, proper padding).
-3. Ensure the content is easy to read (cards for tweets, distinct headers for builders, distinct styling for links and metadata).
-4. Save this file locally (e.g., `/tmp/ai-builders-digest.html` or equivalent accessible path).
-5. Append the file path or URL (if you can serve it) to the very end of your final digest output so the user can open it in their browser.
+After you have generated the full markdown digest, you MUST save it to a temporary file and convert it to a beautiful HTML page.
+1. Save your generated markdown digest to `/tmp/ai-builders-digest.md`.
+2. Run the provided HTML generation script:
+   ```bash
+   cd ${CLAUDE_SKILL_DIR}/scripts && node generate-html.js /tmp/ai-builders-digest.md
+   ```
+3. The script will output the path to the generated HTML file (e.g., `file:///tmp/ai-builders-digest.html`).
+4. **Append this local file:// URL** to the very end of your final text response to the user, telling them they can click it to read the digest in a beautifully formatted webpage.
 
 ### Step 7: Create Feishu Document (If Applicable)
 
