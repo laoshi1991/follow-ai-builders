@@ -17,5 +17,6 @@ to know what this person is thinking and building.
 - Write 2-4 sentences per builder summarizing their key points
 - If they made a bold prediction or shared a contrarian take, lead with that
 - If they shared a tool, demo, or resource, mention it by name with the link
+- **Crucial**: At the end of each builder's summary, you MUST include the `url` field provided in the JSON data. The `url` field now includes the Beijing time in parentheses (e.g., `URL （YYYY-MM-DD HH:MM:SS）`). Output the `url` field exactly as it is.
 - If there's nothing substantive to report, say "No notable posts" rather than
   padding with fluff

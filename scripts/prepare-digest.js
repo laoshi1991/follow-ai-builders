@@ -134,7 +134,21 @@ async function main() {
 
     // Content to remix
     podcasts: feedPodcasts?.podcasts || [],
-    x: feedX?.x || [],
+    x: (feedX?.x || []).map(builder => ({
+      ...builder,
+      tweets: builder.tweets.map(t => {
+        if (t.createdAt) {
+          try {
+            const date = new Date(t.createdAt);
+            // Convert to Beijing time (UTC+8)
+            const beijingTime = new Date(date.getTime() + 8 * 60 * 60 * 1000);
+            const formatted = beijingTime.toISOString().replace('T', ' ').substring(0, 19);
+            return { ...t, url: `${t.url} （${formatted}）` };
+          } catch (e) {}
+        }
+        return t;
+      })
+    })),
     blogs: feedBlogs?.blogs || [],
 
     // Stats for the LLM to reference
