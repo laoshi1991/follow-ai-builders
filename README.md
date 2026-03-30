@@ -23,7 +23,7 @@ WhatsApp, etc.) with:
 ## Quick Start
 
 1. Install the skill in your agent (OpenClaw or Claude Code)
-2. Say "set up follow builders" or invoke `/follow-builders`
+2. Say "set up follow builders" or invoke `/follow-ai-builders`
 3. The agent walks you through setup conversationally — no config files to edit
 
 The agent will ask you:
@@ -86,17 +86,17 @@ These are plain English instructions, not code. Changes take effect on the next 
 ### OpenClaw
 ```bash
 # From ClawhHub (coming soon)
-clawhub install follow-builders
+clawhub install follow-ai-builders
 
 # Or manually
-git clone https://github.com/laoshi1991/follow-ai-builders.git ~/skills/follow-builders
-cd ~/skills/follow-builders/scripts && npm install
+git clone https://github.com/laoshi1991/follow-ai-builders.git ~/skills/follow-ai-builders
+cd ~/skills/follow-ai-builders/scripts && npm install
 ```
 
 ### Claude Code
 ```bash
-git clone https://github.com/laoshi1991/follow-ai-builders.git ~/.claude/skills/follow-builders
-cd ~/.claude/skills/follow-builders/scripts && npm install
+git clone https://github.com/laoshi1991/follow-ai-builders.git ~/.claude/skills/follow-ai-builders
+cd ~/.claude/skills/follow-ai-builders/scripts && npm install
 ```
 
 ## Requirements
@@ -120,7 +120,7 @@ See [examples/sample-digest.md](examples/sample-digest.md) for what the output l
 ## Privacy
 
 - No API keys are sent anywhere — all content is fetched centrally
-- If you use Telegram/email delivery, those keys are stored locally in `~/.follow-builders/.env`
+- If you use Telegram/email delivery, those keys are stored locally in `~/.follow-ai-builders/.env`
 - The skill only reads public content (public blog posts, public YouTube videos, public X posts)
 - Your configuration, preferences, and reading history stay on your machine
 

@@ -19,7 +19,7 @@
 ## 快速开始
 
 1. 在你的 AI agent 中安装此 skill（OpenClaw 或 Claude Code）
-2. 输入 "set up follow builders" 或执行 `/follow-builders`
+2. 输入 "set up follow builders" 或执行 `/follow-ai-builders`
 3. Agent 会以对话方式引导你完成设置——不需要手动编辑任何配置文件
 
 Agent 会询问你：
@@ -79,17 +79,17 @@ Skill 使用纯文本 prompt 文件来控制内容的摘要方式。你可以通
 ### OpenClaw
 ```bash
 # 从 ClawhHub 安装（即将上线）
-clawhub install follow-builders
+clawhub install follow-ai-builders
 
 # 或手动安装
-git clone https://github.com/laoshi1991/follow-ai-builders.git ~/skills/follow-builders
-cd ~/skills/follow-builders/scripts && npm install
+git clone https://github.com/laoshi1991/follow-ai-builders.git ~/skills/follow-ai-builders
+cd ~/skills/follow-ai-builders/scripts && npm install
 ```
 
 ### Claude Code
 ```bash
-git clone https://github.com/laoshi1991/follow-ai-builders.git ~/.claude/skills/follow-builders
-cd ~/.claude/skills/follow-builders/scripts && npm install
+git clone https://github.com/laoshi1991/follow-ai-builders.git ~/.claude/skills/follow-ai-builders
+cd ~/.claude/skills/follow-ai-builders/scripts && npm install
 ```
 
 ## 系统要求
@@ -111,7 +111,7 @@ cd ~/.claude/skills/follow-builders/scripts && npm install
 ## 隐私
 
 - 不发送任何 API key——所有内容由中心化服务获取
-- 如果你使用 Telegram/邮件推送，相关 key 仅存储在本地 `~/.follow-builders/.env`
+- 如果你使用 Telegram/邮件推送，相关 key 仅存储在本地 `~/.follow-ai-builders/.env`
 - Skill 只读取公开内容（公开的博客文章、YouTube 视频和 X 帖子）
 - 你的配置、偏好和阅读记录都保留在你自己的设备上
 
