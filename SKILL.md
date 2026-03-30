@@ -393,7 +393,15 @@ Read `config.language` from the JSON:
 
 **Follow this setting exactly. Do NOT mix languages.**
 
-### Step 6: Deliver
+### Step 6: Create Feishu Document (If Applicable)
+
+If your agent environment has the capability/tools to create and edit Feishu (Lark) documents:
+1. Create a new Feishu document titled "AI Builders Digest - [Today's Date]".
+2. Write the fully remixed digest text into this document.
+3. Append the link to this Feishu document at the very end of your final digest output so the user can access it.
+If your agent does NOT have Feishu document capabilities, simply skip this step and proceed to delivery.
+
+### Step 7: Deliver
 
 Read `config.delivery.method` from the JSON:
 
