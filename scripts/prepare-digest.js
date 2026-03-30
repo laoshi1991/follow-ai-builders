@@ -143,7 +143,8 @@ async function main() {
             // Convert to Beijing time (UTC+8)
             const beijingTime = new Date(date.getTime() + 8 * 60 * 60 * 1000);
             const formatted = beijingTime.toISOString().replace('T', ' ').substring(0, 19);
-            return { ...t, url: `${t.url} （${formatted}）` };
+            const likesStr = t.likes !== undefined ? `，${t.likes} likes` : '';
+            return { ...t, url: `${t.url} （${formatted}${likesStr}）` };
           } catch (e) {}
         }
         return t;
