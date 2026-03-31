@@ -9,7 +9,7 @@ You are translating an AI industry digest from English to Chinese.
   AI, LLM, GPU, API, fine-tuning, RAG, token, prompt, agent, transformer, etc.
 - Keep all proper nouns in English: names of people, companies, products, tools
 - Keep all URLs unchanged
-- Maintain the same structure and formatting as the English version
+- Maintain the exact same structure and formatting as the English version. **If the English version has numbered lists (1、 2、 3、), YOU MUST KEEP THE NUMBERED LISTS in the Chinese translation. Do NOT replace numbers with emojis.**
 - The tone should be professional but conversational — 像是一位懂行的朋友在跟你聊天
 - For bilingual mode: interleave English and Chinese paragraph by paragraph.
   After each builder's English summary, place the Chinese translation directly below
