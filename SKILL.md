@@ -395,20 +395,20 @@ Read `config.language` from the JSON:
 
 ### Step 6: Generate Beautiful HTML Page
 
-After you have generated the full markdown digest, you MUST save it to a temporary file and convert it to a beautiful HTML page.
+After you have generated the full markdown digest, you MUST save it to a temporary file and convert it to a beautiful HTML page on the user's Desktop.
 1. Save your generated markdown digest to `/tmp/ai-builders-digest.md`.
 2. Run the provided HTML generation script:
    ```bash
-   cd ${CLAUDE_SKILL_DIR}/scripts && node generate-html.js /tmp/ai-builders-digest.md
+   cd ${CLAUDE_SKILL_DIR}/scripts && node generate-html.js /tmp/ai-builders-digest.md ~/Desktop/ai-builders-digest.html
    ```
-3. The script will output the path to the generated HTML file (e.g., `file:///tmp/ai-builders-digest.html`).
+3. The script will output the path to the generated HTML file (e.g., `file:///Users/.../Desktop/ai-builders-digest.html`).
 4. **Append this local file:// URL** to the very end of your final text response to the user, telling them they can click it to read the digest in a beautifully formatted webpage.
 
 ### Step 7: Create Feishu Document (If Applicable)
 
 If your agent environment has the capability/tools to create and edit Feishu (Lark) documents:
 1. Create a new Feishu document titled "AI Builders Digest - [Today's Date]".
-2. Write the fully remixed digest text into this document.
+2. **CRITICAL: You MUST write the fully remixed markdown digest text into the body of this Feishu document.** Do not leave it blank.
 3. Append the link to this Feishu document at the very end of your final digest output so the user can access it.
 If your agent does NOT have Feishu document capabilities, simply skip this step and proceed to delivery.
 

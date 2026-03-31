@@ -118,9 +118,10 @@ li a {
 async function main() {
   const args = process.argv.slice(2);
   const inputFile = args[0];
+  const targetFile = args[1]; // Optional target path for the HTML file
 
   if (!inputFile) {
-    console.error('Usage: node generate-html.js <path-to-markdown-file>');
+    console.error('Usage: node generate-html.js <path-to-markdown-file> [target-html-file]');
     process.exit(1);
   }
 
@@ -158,16 +159,22 @@ async function main() {
 </body>
 </html>`;
 
-  // Generate output filename based on input
-  const outputFile = inputFile.replace(/\.md$/, '.html');
-  
-  // If it didn't end in .md, just append .html
-  const finalOutputFile = outputFile === inputFile ? `${inputFile}.html` : outputFile;
+  // Generate output filename based on input or use targetFile if provided
+  let finalOutputFile;
+  if (targetFile) {
+    // Resolve shell home directory shorthand if present
+    const resolvedTarget = targetFile.replace(/^~(?=$|\/|\\)/, process.env.HOME || process.env.USERPROFILE);
+    finalOutputFile = resolvedTarget;
+  } else {
+    const outputFile = inputFile.replace(/\.md$/, '.html');
+    finalOutputFile = outputFile === inputFile ? `${inputFile}.html` : outputFile;
+  }
 
   await writeFile(finalOutputFile, fullHtml);
   
   // Output the absolute path so the LLM can use it
-  console.log(`Successfully generated HTML at: file://${join(process.cwd(), finalOutputFile)}`);
+  const absolutePath = finalOutputFile.startsWith('/') ? finalOutputFile : join(process.cwd(), finalOutputFile);
+  console.log(`Successfully generated HTML at: file://${absolutePath}`);
 }
 
 main().catch(err => {
