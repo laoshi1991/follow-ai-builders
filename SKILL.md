@@ -408,9 +408,10 @@ After you have generated the full markdown digest, you MUST save it to a tempora
 ### Step 7: Create Feishu Document (If Applicable)
 
 If your agent environment has the capability/tools to create and edit Feishu (Lark) documents:
-1. Create a new Feishu document titled "AI Builders Digest - [Today's Date]".
-2. **CRITICAL: After creating the document, you MUST use the appropriate tool (e.g., `edit_document`, `write_document`, or similar depending on your specific Feishu toolset) to actually write the fully remixed markdown digest text into the body of the document.** Creating the document only creates a blank page; you must explicitly execute a second tool call to write the content. Do not leave it blank.
-3. Append the link to this Feishu document at the very end of your final digest output so the user can access it.
+1. Create a new Feishu document with ONLY the title "AI Builders Digest - [Today's Date]". Do NOT attempt to pass the entire digest content during this initial creation step, as it will hit Feishu API length limits and fail silently (leaving a blank document).
+2. **CRITICAL: You MUST use an `append` or `edit` tool to add the content in chunks.** Split the fully remixed markdown digest text into 3 or 4 smaller sections (e.g., introduction + first few builders, next batch of builders, podcasts + closing).
+3. Execute multiple tool calls sequentially to append these chunks into the body of the document until the entire digest is written.
+4. Append the link to this Feishu document at the very end of your final digest output so the user can access it.
 If your agent does NOT have Feishu document capabilities, simply skip this step and proceed to delivery.
 
 ### Step 8: Deliver
