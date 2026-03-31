@@ -28,7 +28,7 @@ Then organize content in this order:
 
 ### Tweet author formatting
 - **ABSOLUTE RULE: You MUST use a strict NUMBERED FORMAT for each builder.** 
-- Start every single builder's section with the number: "1、姓名 (公司/角色)" (e.g. "1、Aaron Levie (Box CEO)").
+- Start every single builder's section with the number: "1、name (company/role)" (e.g. "1、Aaron Levie (Box CEO)").
 - You MUST continue numbering sequentially for every builder in the list: 2、3、4、etc. 
 - **DO NOT put ANY emojis at the start of the line.** Emojis break the numbering format.
 - Use the author's full name and role/company, not just their last name
