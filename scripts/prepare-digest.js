@@ -142,9 +142,22 @@ async function main() {
             const date = new Date(t.createdAt);
             // Convert to Beijing time (UTC+8)
             const beijingTime = new Date(date.getTime() + 8 * 60 * 60 * 1000);
-            const formatted = beijingTime.toISOString().replace('T', ' ').substring(0, 19);
-            const likesStr = t.likes !== undefined ? `，${t.likes} likes` : '';
-            return { ...t, url: `${t.url} （${formatted}${likesStr}）` };
+            
+            // Format as YYYY-MM-DD hh:mmA
+            const year = beijingTime.getUTCFullYear();
+            const month = String(beijingTime.getUTCMonth() + 1).padStart(2, '0');
+            const day = String(beijingTime.getUTCDate()).padStart(2, '0');
+            
+            let hours = beijingTime.getUTCHours();
+            const minutes = String(beijingTime.getUTCMinutes()).padStart(2, '0');
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+            hours = hours % 12;
+            hours = hours ? hours : 12; // the hour '0' should be '12'
+            const strTime = `${String(hours).padStart(2, '0')}:${minutes}${ampm}`;
+            
+            const formatted = `${year}-${month}-${day} ${strTime}`;
+            const likesStr = t.likes !== undefined ? `, ${t.likes} likes` : '';
+            return { ...t, url: `${t.url} (${formatted}${likesStr})` };
           } catch (e) {}
         }
         return t;
