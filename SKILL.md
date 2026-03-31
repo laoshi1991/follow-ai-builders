@@ -395,20 +395,21 @@ Read `config.language` from the JSON:
 
 ### Step 6: Generate Beautiful HTML Page
 
-After you have generated the full markdown digest, you MUST save it to a temporary file and convert it to a beautiful HTML page on the user's Desktop.
+After you have generated the full markdown digest, you MUST save it to a temporary file and convert it to a beautiful HTML page directly on the user's Desktop.
 1. Save your generated markdown digest to `/tmp/ai-builders-digest.md`.
-2. Run the provided HTML generation script:
+2. Run the provided HTML generation script to output directly to the user's Desktop:
    ```bash
-   cd ${CLAUDE_SKILL_DIR}/scripts && node generate-html.js /tmp/ai-builders-digest.md ~/Desktop/ai-builders-digest.html
+   # IMPORTANT: Use the expanded path to ensure it lands on the actual Desktop
+   cd ${CLAUDE_SKILL_DIR}/scripts && node generate-html.js /tmp/ai-builders-digest.md "$HOME/Desktop/ai-builders-digest.html"
    ```
-3. The script will output the path to the generated HTML file (e.g., `file:///Users/.../Desktop/ai-builders-digest.html`).
-4. **Append this local file:// URL** to the very end of your final text response to the user, telling them they can click it to read the digest in a beautifully formatted webpage.
+3. The script will output the absolute path to the generated HTML file.
+4. **Append this local file:// URL** to the very end of your final text response to the user, telling them they can click it to read the digest in a beautifully formatted webpage on their Desktop.
 
 ### Step 7: Create Feishu Document (If Applicable)
 
 If your agent environment has the capability/tools to create and edit Feishu (Lark) documents:
 1. Create a new Feishu document titled "AI Builders Digest - [Today's Date]".
-2. **CRITICAL: You MUST write the fully remixed markdown digest text into the body of this Feishu document.** Do not leave it blank.
+2. **CRITICAL: After creating the document, you MUST use the appropriate tool (e.g., `edit_document`, `write_document`, or similar depending on your specific Feishu toolset) to actually write the fully remixed markdown digest text into the body of the document.** Creating the document only creates a blank page; you must explicitly execute a second tool call to write the content. Do not leave it blank.
 3. Append the link to this Feishu document at the very end of your final digest output so the user can access it.
 If your agent does NOT have Feishu document capabilities, simply skip this step and proceed to delivery.
 

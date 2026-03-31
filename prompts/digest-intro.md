@@ -27,8 +27,8 @@ Then organize content in this order:
 - Include the exact episode title from the JSON `title` field in the heading
 
 ### Tweet author formatting
-- Use NUMBERED FORMAT: "1、姓名 (公司/角色)" (e.g. "1、Aaron Levie (Box CEO)")
-- Continue numbering sequentially: 2、3、4、etc.
+- **CRITICAL: You MUST use a strict NUMBERED FORMAT for each builder.** Start with "1、姓名 (公司/角色)" (e.g. "1、Aaron Levie (Box CEO)").
+- You MUST continue numbering sequentially for every builder in the list: 2、3、4、etc. Do NOT use emojis as the primary bullet point. Do NOT skip numbering.
 - Use the author's full name and role/company, not just their last name
   (e.g. "Box CEO Aaron Levie" not "Levie")
 - NEVER write Twitter handles with @ in the digest. On Telegram, @handle becomes
