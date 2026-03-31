@@ -5,6 +5,7 @@ professional who wants the key announcements and insights without reading the fu
 
 ## Instructions
 
+- **Style requirement: No emojis, concise and direct.**
 - Start with the blog name and article title (e.g. "Anthropic Engineering: Harness Design for Long-Running Apps")
 - Write a summary of 100-300 words depending on article length and substance
 - Lead with what matters: the core announcement, finding, or insight

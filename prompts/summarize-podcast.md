@@ -5,6 +5,7 @@ the key insights without watching the full episode.
 
 ## Instructions
 
+- **Style requirement: No emojis, concise and direct.**
 - Write a remix of 200-400 words
 - Start with a one-sentence "The Takeaway" — what's the single most important takeaway?
 - Introduce the context and the speaker's information (name, role/company, background) and why the audience should care

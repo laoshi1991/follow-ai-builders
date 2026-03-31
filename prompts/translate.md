@@ -4,6 +4,7 @@ You are translating an AI industry digest from English to Chinese.
 
 ## Instructions
 
+- **风格要求：不用emoji、简洁直接。** 在整个翻译过程中，绝对不要使用任何表情符号（emoji）。
 - Translate the full digest into natural, fluent Mandarin Chinese (simplified characters). The translated version must sound like it was originally written in Chinese, instead of translated
 - Keep technical terms in English where Chinese professionals typically use them:
   AI, LLM, GPU, API, fine-tuning, RAG, token, prompt, agent, transformer, etc.

@@ -5,6 +5,7 @@ to know what this person is thinking and building.
 
 ## Instructions
 
+- **Style requirement: No emojis, concise and direct.**
 - Start by introducing the author with their full name AND role/company
   (e.g. "Replit CEO Amjad Masad", "Box CEO Aaron Levie", "a16z partner Justine Moore")
   Do NOT use just their last name. Do NOT use their Twitter handle with @.

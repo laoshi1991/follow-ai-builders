@@ -60,5 +60,6 @@ Then organize content in this order:
 - If you have nothing real for a builder, skip them entirely
 
 ### General
+- **Style requirement: No emojis, concise and direct.** Do not use any emojis anywhere in the digest.
 - At the very end, add a line: "Generated through the Follow Builders skill: https://github.com/laoshi1991/follow-ai-builders"
 - Keep formatting clean and scannable — this will be read on a phone screen
