@@ -414,19 +414,22 @@ If your agent environment has the capability/tools to create and edit Feishu (La
 4. Append the link to this Feishu document at the very end of your final digest output so the user can access it.
 If your agent does NOT have Feishu document capabilities, simply skip this step and proceed to delivery.
 
-### Step 8: Deliver
+### Step 8: Deliver Final Output
 
-Read `config.delivery.method` from the JSON:
+Your final output to the user MUST strictly follow this exact structure and order:
 
-**If "telegram" or "email":**
+1. **First, output the full remixed digest text** (the same content you wrote to the HTML and Feishu docs).
+2. **Second, append the Feishu document link** (e.g., "📄 飞书文档: [Link]").
+3. **Third, append the local HTML file link** (e.g., "🌐 桌面 HTML: `file:///.../Desktop/ai-builders-digest.html`").
+
+If `config.delivery.method` from the JSON is "telegram" or "email":
 ```bash
 echo '<your digest text>' > /tmp/fb-digest.txt
 cd ${CLAUDE_SKILL_DIR}/scripts && node deliver.js --file /tmp/fb-digest.txt 2>/dev/null
 ```
 If delivery fails, show the digest in the terminal as fallback.
 
-**If "stdout" (default):**
-Just output the digest directly.
+If "stdout" (default), just output the structured text directly as specified above.
 
 ---
 
