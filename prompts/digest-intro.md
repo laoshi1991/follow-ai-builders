@@ -44,7 +44,7 @@ Then organize content in this order:
 Here is exactly how a builder's section MUST look:
 
 1. Aaron Levie (BOX CEO)
-认为 AI agent 带来的生产力提升最终将受限于安全性、合规性和治理等关键因素。他指出企业希望自己生成代码（vibe code）的想法有些不切实际，因为在企业环境中，人们不可能承担每一项技术的全部风险。他强调 AI 生产力没有免费的午餐，公司必须建立完善的系统和流程来控制 agent。
+Argues that the productivity gains brought by AI agents will ultimately be constrained by key factors like security, compliance, and governance. He points out that the idea of enterprises letting agents generate code on their own (vibe code) is somewhat unrealistic, because in an enterprise environment, people cannot take on the full risk of every technology. He emphasizes there is no free lunch in AI productivity, and companies must build robust systems and processes to control agents.
 https://x.com/levie/status/2039216522028257549 (2026-04-01 01:41PM, 96 likes)
 
 ---
