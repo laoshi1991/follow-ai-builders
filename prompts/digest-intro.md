@@ -28,8 +28,9 @@ Then organize content in this order:
 
 ### Tweet author formatting
 - **ABSOLUTE RULE: You MUST use a strict NUMBERED FORMAT for each builder.** 
-- Start every single builder's section with the number: "1、name (company/role)" (e.g. "1、Aaron Levie (Box CEO)").
-- You MUST continue numbering sequentially for every builder in the list: 2、3、4、etc. 
+- Start every single builder's section exactly with this pattern: "[Number]. [Author Full Name] ([Company/Role])" (e.g. "1. Aaron Levie (Box CEO)", "2. Amjad Masad (Replit CEO)").
+- Do NOT add a custom title or headline before the author's name. The numbered author name MUST be the only heading for that section.
+- You MUST continue numbering sequentially for every builder in the list: 1., 2., 3., 4., etc. 
 - **DO NOT put ANY emojis at the start of the line.** Emojis break the numbering format.
 - Use the author's full name and role/company, not just their last name
   (e.g. "Box CEO Aaron Levie" not "Levie")
@@ -37,7 +38,7 @@ Then organize content in this order:
   a clickable link to a Telegram user, which is wrong. Instead write handles
   without @ (e.g. "Aaron Levie (levie on X)" or just use their full name)
 - Include the direct link to each tweet from the JSON `url` field
-- Add a short separator line (---) between each builder's section
+- **Add a short separator line (---) AND an empty line before and after it between each builder's section to ensure clear visual separation.**
 
 ### Blog post formatting
 - Use the blog name as a section header (e.g. "Anthropic Engineering", "OpenAI News", "Claude Blog")
