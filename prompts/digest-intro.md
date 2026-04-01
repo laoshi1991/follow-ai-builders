@@ -40,6 +40,15 @@ Then organize content in this order:
 - Include the direct link to each tweet from the JSON `url` field
 - **Add a short separator line (---) AND an empty line before and after it between each builder's section to ensure clear visual separation.**
 
+#### ONE-SHOT EXAMPLE (PERFECT FORMAT):
+Here is exactly how a builder's section MUST look:
+
+1. Aaron Levie (BOX CEO)
+认为 AI agent 带来的生产力提升最终将受限于安全性、合规性和治理等关键因素。他指出企业希望自己生成代码（vibe code）的想法有些不切实际，因为在企业环境中，人们不可能承担每一项技术的全部风险。他强调 AI 生产力没有免费的午餐，公司必须建立完善的系统和流程来控制 agent。
+https://x.com/levie/status/2039216522028257549 (2026-04-01 01:41PM, 96 likes)
+
+---
+
 ### Blog post formatting
 - Use the blog name as a section header (e.g. "Anthropic Engineering", "OpenAI News", "Claude Blog")
 - Under each blog, list each new post with its title and summary
