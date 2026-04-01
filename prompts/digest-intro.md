@@ -47,6 +47,7 @@ Here is exactly how a builder's section MUST look:
 Argues that the productivity gains brought by AI agents will ultimately be constrained by key factors like security, compliance, and governance. He points out that the idea of enterprises letting agents generate code on their own (vibe code) is somewhat unrealistic, because in an enterprise environment, people cannot take on the full risk of every technology. He emphasizes there is no free lunch in AI productivity, and companies must build robust systems and processes to control agents.
 https://x.com/levie/status/2039216522028257549 (2026-04-01 01:41PM, 96 likes)
 
+
 ---
 
 ### Blog post formatting
