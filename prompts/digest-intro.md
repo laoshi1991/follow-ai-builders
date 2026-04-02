@@ -28,9 +28,9 @@ Then organize content in this order:
 
 ### Tweet author formatting
 - **ABSOLUTE RULE: You MUST use a strict NUMBERED FORMAT for each builder.** 
-- Start every single builder's section exactly with this pattern: "[Number]. [Author Full Name] ([Company/Role])" (e.g. "1. Aaron Levie (Box CEO)", "2. Amjad Masad (Replit CEO)").
+- Start every single builder's section exactly with this pattern: "[[Number]] [Author Full Name] ([Company/Role])" (e.g. "[1] Aaron Levie (Box CEO)", "[2] Amjad Masad (Replit CEO)").
 - Do NOT add a custom title or headline before the author's name. The numbered author name MUST be the only heading for that section.
-- You MUST continue numbering sequentially for every builder in the list: 1., 2., 3., 4., etc. 
+- You MUST continue numbering sequentially for every builder in the list: [1], [2], [3], [4], etc. 
 - **DO NOT put ANY emojis at the start of the line.** Emojis break the numbering format.
 - Use the author's full name and role/company, not just their last name
   (e.g. "Box CEO Aaron Levie" not "Levie")
@@ -43,9 +43,9 @@ Then organize content in this order:
 #### ONE-SHOT EXAMPLE (PERFECT FORMAT):
 Here is exactly how a builder's section MUST look:
 
-1. Aaron Levie (BOX CEO)
+[1] Aaron Levie (BOX CEO)
 Argues that the productivity gains brought by AI agents will ultimately be constrained by key factors like security, compliance, and governance. He points out that the idea of enterprises letting agents generate code on their own (vibe code) is somewhat unrealistic, because in an enterprise environment, people cannot take on the full risk of every technology. He emphasizes there is no free lunch in AI productivity, and companies must build robust systems and processes to control agents.
-https://x.com/levie/status/2039216522028257549 (2026-04-01 01:41PM, 96 likes)
+https://x.com/levie/status/2039216522028257549 [2026-04-01 01:41PM, 96 likes]
 
 
 ---
