@@ -284,7 +284,7 @@ and send the user their first digest so they can see what it looks like.
 Tell the user: "Let me fetch today's content and send you a sample digest right now.
 This takes about a minute."
 
-Then run the full Content Delivery workflow below (Steps 1-6) right now, without
+Then run the full Content Delivery workflow below right now, without
 waiting for the cron job.
 
 After delivering the digest, ask for feedback:
@@ -393,19 +393,7 @@ Read `config.language` from the JSON:
 
 **Follow this setting exactly. Do NOT mix languages.**
 
-### Step 6: Generate Beautiful HTML Page
-
-After you have generated the full markdown digest, you MUST save it to a temporary file and convert it to a beautiful HTML page directly on the user's Desktop.
-1. Save your generated markdown digest to `/tmp/ai-builders-digest.md`.
-2. Run the provided HTML generation script to output directly to the user's Desktop:
-   ```bash
-   # IMPORTANT: Use the expanded path to ensure it lands on the actual Desktop
-   cd ${CLAUDE_SKILL_DIR}/scripts && node generate-html.js /tmp/ai-builders-digest.md "$HOME/Desktop/ai-builders-digest.html"
-   ```
-3. The script will output the absolute path to the generated HTML file.
-4. **Append this local file:// URL** to the very end of your final text response to the user, telling them they can click it to read the digest in a beautifully formatted webpage on their Desktop.
-
-### Step 7: Create Feishu Document (If Applicable)
+### Step 6: Create Feishu Document (If Applicable)
 
 If your agent environment has the capability/tools to create and edit Feishu (Lark) documents:
 1. Create a new Feishu document with ONLY the title "AI Builders Digest - [Today's Date]". Do NOT attempt to pass the entire digest content during this initial creation step, as it will hit Feishu API length limits and fail silently (leaving a blank document).
@@ -414,13 +402,12 @@ If your agent environment has the capability/tools to create and edit Feishu (La
 4. Append the link to this Feishu document at the very end of your final digest output so the user can access it.
 If your agent does NOT have Feishu document capabilities, simply skip this step and proceed to delivery.
 
-### Step 8: Deliver Final Output
+### Step 7: Deliver Final Output
 
 Your final output to the user MUST strictly follow this exact structure and order:
 
-1. **First, output the full remixed digest text** (the same content you wrote to the HTML and Feishu docs).
-2. **Second, append the Feishu document link** (e.g., "📄 飞书文档: [Link]").
-3. **Third, append the local HTML file link** (e.g., "🌐 桌面 HTML: `file:///.../Desktop/ai-builders-digest.html`").
+1. **First, output the full remixed digest text** (the same content you wrote to the Feishu doc).
+2. **Second, append the Feishu document link** (e.g., "📄 飞书文档: [Link]") if applicable.
 
 If `config.delivery.method` from the JSON is "telegram" or "email":
 ```bash
