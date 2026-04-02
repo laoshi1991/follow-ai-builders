@@ -157,7 +157,7 @@ async function main() {
             
             const formatted = `${year}-${month}-${day} ${strTime}`;
             const likesStr = t.likes !== undefined ? `, ${t.likes} likes` : '';
-            return { ...t, url: `${t.url} (${formatted}${likesStr})` };
+            return { ...t, url: `${t.url} [${formatted}${likesStr}]` };
           } catch (e) {}
         }
         return t;
