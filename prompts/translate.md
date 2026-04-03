@@ -9,7 +9,7 @@ You are translating an AI industry digest from English to Chinese.
 - Keep technical terms in English where Chinese professionals typically use them:
   AI, LLM, GPU, API, fine-tuning, RAG, token, prompt, agent, transformer, etc.
 - Keep all proper nouns in English: names of people, companies, products, tools
-- Keep all URLs unchanged
+- Keep all URLs exactly unchanged. If the URL has metadata in brackets (e.g. `[2026-03-31 12:50PM, 322 likes]`), keep the English word "likes". DO NOT translate it to "个赞" or move it into the summary text. DO NOT add link emojis like 🔗.
 - **CRITICAL FORMATTING RULE**: Maintain the exact same structure and formatting as the English version. **You MUST strictly keep the numbered list format ([1], [2], [3]) for each builder in the Chinese translation.** Do NOT add custom titles like "新闻标题 — 作者". The format MUST remain "[1] 姓名 (公司/角色)".
 - The tone should be professional but conversational — 像是一位懂行的朋友在跟你聊天
 - For bilingual mode: interleave English and Chinese paragraph by paragraph.

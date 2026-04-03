@@ -28,7 +28,7 @@ Then organize content in this order:
 
 ### Tweet author formatting
 - **ABSOLUTE RULE: You MUST use a strict NUMBERED FORMAT for each builder.** 
-- Start every single builder's section exactly with this pattern: "[[Number]] [Author Full Name] ([Company/Role])" (e.g. "[1] Aaron Levie (Box CEO)", "[2] Amjad Masad (Replit CEO)").
+- Start every single builder's section exactly with this pattern: "[N] [Author Full Name] ([Company/Role])" (e.g. "[1] Aaron Levie (Box CEO)", "[2] Amjad Masad (Replit CEO)").
 - Do NOT add a custom title or headline before the author's name. The numbered author name MUST be the only heading for that section.
 - You MUST continue numbering sequentially for every builder in the list: [1], [2], [3], [4], etc. 
 - **DO NOT put ANY emojis at the start of the line.** Emojis break the numbering format.

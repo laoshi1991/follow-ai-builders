@@ -30,7 +30,7 @@ const FEED_X_URL = 'https://raw.githubusercontent.com/zarazhangrui/follow-builde
 const FEED_PODCASTS_URL = 'https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-podcasts.json';
 const FEED_BLOGS_URL = 'https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-blogs.json';
 
-const PROMPTS_BASE = 'https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/prompts';
+const PROMPTS_BASE = 'https://raw.githubusercontent.com/laoshi1991/follow-ai-builders/main/prompts';
 const PROMPT_FILES = [
   'summarize-podcast.md',
   'summarize-tweets.md',
@@ -157,7 +157,11 @@ async function main() {
             
             const formatted = `${year}-${month}-${day} ${strTime}`;
             const likesStr = t.likes !== undefined ? `, ${t.likes} likes` : '';
-            return { ...t, url: `${t.url} [${formatted}${likesStr}]` };
+            const newUrl = `${t.url} [${formatted}${likesStr}]`;
+            
+            // Strip metadata fields so the LLM doesn't try to weave them into the summary body
+            const { createdAt, likes, retweets, replies, ...rest } = t;
+            return { ...rest, url: newUrl };
           } catch (e) {}
         }
         return t;

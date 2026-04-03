@@ -19,6 +19,8 @@ to know what this person is thinking and building.
 - Write 2-4 sentences per builder summarizing their key points
 - If they made a bold prediction or shared a contrarian take, lead with that
 - If they shared a tool, demo, or resource, mention it by name with the link
-- **Crucial**: At the end of each builder's summary, you MUST include the `url` field provided in the JSON data. The `url` field now includes the Beijing time and likes count in brackets (e.g., `URL [2026-03-31 12:50PM, 322 likes]`). Output the `url` field exactly as it is, on the same line as the URL or directly below it.
+- **Crucial Formatting**: At the end of each builder's summary, you MUST output the `url` field EXACTLY as it appears in the JSON. The `url` field contains the time and likes in brackets (e.g. `URL [2026-03-31 12:50PM, 322 likes]`).
+  - DO NOT mention the number of likes, retweets, or dates in the summary text itself. Keep numbers out of the summary body.
+  - DO NOT add link emojis like 🔗.
 - If there's nothing substantive to report, say "No notable posts" rather than
   padding with fluff
