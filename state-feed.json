@@ -1,17 +1,12 @@
 {
   "seenTweets": {},
   "seenVideos": {
-    "obEWFoLfWD4": 1775027351207,
-    "rX3CxlGm-00": 1775113285757,
     "oBWRHnggscM": 1775199491963
   },
   "seenArticles": {
-    "https://www.anthropic.com/engineering/infrastructure-noise": 1775113289482,
-    "https://www.anthropic.com/engineering/harness-design-long-running-apps": 1775113292023,
-    "https://claude.com/blog/claude-builds-visuals": 1775113292766,
-    "https://claude.com/blog/how-enterprises-are-building-ai-agents-in-2026": 1775113293329,
-    "https://claude.com/blog/improving-frontend-design-through-skills": 1775113293895,
     "https://claude.com/blog/harnessing-claudes-intelligence": 1775199492402,
-    "https://www.anthropic.com/engineering/claude-code-auto-mode": 1775285310484
+    "https://www.anthropic.com/engineering/claude-code-auto-mode": 1775285310484,
+    "https://www.anthropic.com/engineering/managed-agents": 1775718682134,
+    "https://claude.com/blog/claude-managed-agents": 1775718682946
   }
 }
