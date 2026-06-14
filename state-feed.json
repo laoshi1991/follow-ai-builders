@@ -1,8 +1,6 @@
 {
   "seenTweets": {},
-  "seenVideos": {
-    "-rIAVuaRjOg": 1780821863670
-  },
+  "seenVideos": {},
   "seenArticles": {
     "https://claude.com/blog/new-in-claude-managed-agents": 1780913824570,
     "https://claude.com/blog/claude-for-foundation-models": 1780995587385,
