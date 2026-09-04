@@ -1,10 +1,9 @@
 {
   "seenTweets": {},
-  "seenVideos": {},
+  "seenVideos": {
+    "3uSI8q_RN-o": 1788517002036
+  },
   "seenArticles": {
-    "https://claude.com/blog/claude-in-chrome-generally-available": 1787850279538,
-    "https://claude.com/blog/cowork-built-in-browser": 1787850280088,
-    "https://claude.com/blog/artifacts-in-claude-code": 1787850280658,
     "https://www.anthropic.com/engineering/how-we-contain-claude": 1787939562107,
     "https://www.anthropic.com/engineering/april-23-postmortem": 1787939562769,
     "https://www.anthropic.com/engineering/managed-agents": 1787939563399
