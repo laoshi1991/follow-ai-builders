@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T09:54:05.297Z",
+  "generatedAt": "2026-09-07T11:01:37.363Z",
   "lookbackHours": 72,
   "podcasts": [],
   "stats": {
@@ -8,7 +8,6 @@
   "errors": [
     "YouTube: Failed to fetch videos for No Priors: HTTP 429",
     "YouTube: Failed to fetch videos for Unsupervised Learning: HTTP 429",
-    "YouTube: Failed to fetch videos for Data Driven NYC: HTTP 429",
-    "YouTube: Failed to get transcript for KS_IpnX7n9I: HTTP 429"
+    "YouTube: Failed to fetch videos for Data Driven NYC: HTTP 429"
   ]
 }
