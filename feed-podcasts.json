@@ -1,8 +1,12 @@
 {
-  "generatedAt": "2026-09-09T10:23:03.317Z",
+  "generatedAt": "2026-09-10T10:15:01.599Z",
   "lookbackHours": 72,
   "podcasts": [],
   "stats": {
     "podcastEpisodes": 0
-  }
+  },
+  "errors": [
+    "YouTube: Failed to fetch videos for Data Driven NYC: HTTP 429",
+    "YouTube: Failed to get transcript for uLDK4l_-gUE: HTTP 429"
+  ]
 }
